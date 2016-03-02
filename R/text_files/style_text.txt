@@ -1,0 +1,6 @@
+	<![CDATA[
+		path {
+		stroke: #AAAAAA;
+		stroke-width: 1;
+		}
+	]]>

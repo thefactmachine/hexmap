@@ -1,0 +1,17 @@
+id,name,x,y,abbreviation,value
+1,Northland,125,266,NTL,34.8
+2,Auckland,151,251,AUK,53.8
+3,Waikato,125,206,WKO,48.1
+4,Bay of Plenty,151,221,BOP,42.2
+5,Gisborne,177,206,GIS,34.6
+6,Hawke's Bay,177,176,HKB,40.1
+7,Taranaki,125,176,TKI,80.3
+8,Manawatu-Wanganui,151,191,MWT,39.4
+9,Wellington,151,161,WGN,62.0
+10,West Coast,62,82,WTC,52.3
+11,Canterbury,88,97,CAN,53.1
+12,Otago,62,52,OTA,46.7
+13,Southland,36,37,STL,57.1
+14,Tasman,88,127,TAS,42.7
+15,Nelson,114,142,NSN,42.7
+16,Marlborough,114,112,MBH,51.1

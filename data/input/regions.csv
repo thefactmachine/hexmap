@@ -1,0 +1,17 @@
+name,name_abbr,x_centre,y_centre,height
+Northland Region,NTL,125.0192,266,30
+Auckland Region,AUK,151,251,30
+Waikato Region,WKO,125.0192,206,30
+Bay of Plenty Region,BOP,151,221,30
+Wellington Region,WGN,151,161,30
+Manawatu-Wanganui Region,MWT,151,191,30
+Gisborne Region,GIS,176.98,206,30
+Taranaki Region,TKI,125.0192,176,30
+Hawke's Bay Region,HKB,176.98,176,30
+Marlborough Region,MBH,114,112,30
+Canterbury Region,CAN,88.0194,97,30
+Tasman Region,TAS,88.0194,127,30
+Otago Region,OTA,62.03864,52,30
+Southland Region,STL,36.05784,37,30
+West Coast Region,WTC,62.03864,82,30
+Nelson Region,NSN,114,142,30

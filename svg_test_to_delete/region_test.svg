@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" id="svdid" viewBox="18.74 281 175.56 259"
+       width="175" height ="258.17"
+       xml:space ="preserve"
+       style ="background-color: #FFFFFF;">
+
+
+
+<defs>
+<style type="text/css">
+	<![CDATA[
+		path {
+		stroke: #000000;
+		stroke-width: 0.5;
+		}
+	]]>
+</style>
+</defs>
+
+
+<text id = "TEXT_NAME" x = "18.74" y = "327" font-family = "sans-serif" font-size = "12px" fill = "#000000"></text>
+<text id = "TEXT_VALUE" x = "18.74" y = "350" font-family = "sans-serif" font-size = "12px" fill = "#000000"></text>
+<path id="AUK" style="fill:#08519C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M142.3397,326l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H142.3397z"/>
+<path id="BOP" style="fill:#C6DBEF;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M142.3397,356l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H142.3397z"/>
+<path id="CAN" style="fill:#08519C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M79.3591,480l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H79.3591z"/>
+<path id="GIS" style="fill:#6BAED6;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M168.3197,371l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H168.3197z"/>
+<path id="HKB" style="fill:#9ECAE1;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M168.3197,401l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H168.3197z"/>
+<path id="MWT" style="fill:#3182BD;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M142.3397,386l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H142.3397z"/>
+<path id="MBH" style="fill:#C6DBEF;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M105.3397,465l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H105.3397z"/>
+<path id="NSN" style="fill:#C6DBEF;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M105.3397,435l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H105.3397z"/>
+<path id="NTL" style="fill:#9ECAE1;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M116.3589,311l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H116.3589z"/>
+<path id="OTA" style="fill:#08519C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M53.3784,525l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H53.3784z"/>
+<path id="STL" style="fill:#6BAED6;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M27.3976,540l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H27.3976z"/>
+<path id="TKI" style="fill:#3182BD;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M116.3589,401l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H116.3589z"/>
+<path id="TAS" style="fill:#6BAED6;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M79.3591,450l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H79.3591z"/>
+<path id="WKO" style="fill:#3182BD;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M116.3589,371l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H116.3589z"/>
+<path id="WGN" style="fill:#9ECAE1;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M142.3397,416l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H142.3397z"/>
+<path id="WTC" style="fill:#08519C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M53.3784,495l-8.66,-15l8.66,-15h17.32l8.66,15l-8.66,15H53.3784z"/>
+
+
+
+<script type="text/javascript">
+
+
+<![CDATA[
+
+
+var objNames =  
+ {
+    "AUK":{"name":"Auckland","value":"1,091,109"},
+    "BOP":{"name":"Bay of Plenty","value":"948,883"},
+    "CAN":{"name":"Canterbury","value":"1,030,307"},
+    "GIS":{"name":"Gisborne","value":"995,553"},
+    "HKB":{"name":"Hawke's Bay","value":"986,958"},
+    "MWT":{"name":"Manawatu-Wanganui","value":"1,023,205"},
+    "MBH":{"name":"Marlborough","value":"948,980"},
+    "NSN":{"name":"Nelson","value":"934,327"},
+    "NTL":{"name":"Northland","value":"975,276"},
+    "OTA":{"name":"Otago","value":"1,087,588"},
+    "STL":{"name":"Southland","value":"1,002,788"},
+    "TKI":{"name":"Taranaki","value":"1,016,572"},
+    "TAS":{"name":"Tasman","value":"990,508"},
+    "WKO":{"name":"Waikato","value":"1,023,525"},
+    "WGN":{"name":"Wellington","value":"952,416"},
+    "WTC":{"name":"West Coast","value":"1,057,896"}
+}
+
+
+function m_over(hover_id) { 
+    var objName = objNames[hover_id].name;
+    var objValue = objNames[hover_id].value;
+    document.getElementById("TEXT_NAME").innerHTML = objName;
+    document.getElementById("TEXT_VALUE").innerHTML = objValue;
+    document.getElementById(hover_id).setAttribute("fill-opacity", "0.3");
+}
+
+function m_out(hover_id) { 
+    document.getElementById(hover_id).setAttribute("fill-opacity", "1.0");
+	document.getElementById("TEXT_NAME").innerHTML = "";
+    document.getElementById("TEXT_VALUE").innerHTML = "";
+}
+
+
+]]>
+
+
+</script>
+
+
+</svg>

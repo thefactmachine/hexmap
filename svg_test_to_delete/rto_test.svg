@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" id="svdid-ta" viewBox="20.21 260.45 170.72 212.25"
+       width="175" height ="217.57"
+       xml:space ="preserve"
+       style ="background-color: #FFFFFF;">
+
+
+
+<defs>
+<style type="text/css">
+	<![CDATA[
+		path {
+		stroke: #000000;
+		stroke-width: 0.5;
+		}
+	]]>
+</style>
+</defs>
+
+
+<text id = "TEXT_NAME" x = "20.21" y = "306.45" font-family = "sans-serif" font-size = "12px" fill = "#000000"></text>
+<text id = "TEXT_VALUE" x = "20.21" y = "329.45" font-family = "sans-serif" font-size = "12px" fill = "#000000"></text>
+<path id="AUK" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M125.9795,282.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H125.9795z"/>
+<path id="BOP" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M151.9603,312.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H151.9603z"/>
+<path id="COT" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M63.5083,442.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H63.5083z"/>
+<path id="CHC" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M102.4795,420.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H102.4795z"/>
+<path id="CLU" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M50.5179,465.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H50.5179z"/>
+<path id="COR" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M138.9699,305.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H138.9699z"/>
+<path id="DUN" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M63.5083,457.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H63.5083z"/>
+<path id="FIL" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M24.5371,465.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H24.5371z"/>
+<path id="GIS" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M177.9411,327.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H177.9411z"/>
+<path id="HKB" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M164.9507,335.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H164.9507z"/>
+<path id="KHO" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M138.9699,365.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H138.9699z"/>
+<path id="KAW" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M164.9507,320.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H164.9507z"/>
+<path id="LTA" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M151.9603,342.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H151.9603z"/>
+<path id="WAN" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M50.5179,435.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H50.5179z"/>
+<path id="MAN" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M151.9603,357.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H151.9603z"/>
+<path id="MBH" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M115.4699,382.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H115.4699z"/>
+<path id="NST" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M102.4795,390.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H102.4795z"/>
+<path id="NCN" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M102.4795,405.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H102.4795z"/>
+<path id="NTL" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M112.9891,275.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H112.9891z"/>
+<path id="QUT" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M37.5275,457.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H37.5275z"/>
+<path id="ROT" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M151.9603,327.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H151.9603z"/>
+<path id="RUA" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M138.9699,335.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H138.9699z"/>
+<path id="SCN" style="fill:#A1D99B;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M89.4891,427.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H89.4891z"/>
+<path id="STL" style="fill:#006D2C;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M37.5275,472.7l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H37.5275z"/>
+<path id="TKI" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M125.9795,342.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H125.9795z"/>
+<path id="WKO" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M125.9795,297.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H125.9795z"/>
+<path id="WPA" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M151.9603,372.95l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H151.9603z"/>
+<path id="WAI" style="fill:#C7E9C0;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M76.4987,435.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H76.4987z"/>
+<path id="WGU" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M138.9699,350.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H138.9699z"/>
+<path id="WGN" style="fill:#74C476;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M138.9699,380.45l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H138.9699z"/>
+<path id="WTC" style="fill:#31A354;" onmouseover="m_over(this.id);" onmouseout="m_out(this.id);" d="M76.4987,420.2l-4.33,-7.5l4.33,-7.5h8.66l4.33,7.5l-4.33,7.5H76.4987z"/>
+
+
+
+<script type="text/javascript">
+
+
+<![CDATA[
+
+
+var objNames =  
+ {
+    "AUK":{"name":"Auckland RTO","value":"953,172"},
+    "BOP":{"name":"Bay of Plenty RTO","value":"929,961"},
+    "COT":{"name":"Central Otago RTO","value":"1,008,014"},
+    "CHC":{"name":"Christchurch","value":"986,302"},
+    "CLU":{"name":"Clutha","value":"950,723"},
+    "COR":{"name":"Coromandel RTO","value":"1,004,197"},
+    "DUN":{"name":"Dunedin RTO","value":"934,000"},
+    "FIL":{"name":"Fiordland RTO","value":"1,008,061"},
+    "GIS":{"name":"Gisborne RTO","value":"968,754"},
+    "HKB":{"name":"Hawke's Bay RTO","value":"1,047,858"},
+    "KHO":{"name":"Kapiti-Horowhenua RTO","value":"1,121,224"},
+    "KAW":{"name":"Kawerau-Whakatane","value":"954,201"},
+    "LTA":{"name":"Lake Taupo RTO","value":"1,052,883"},
+    "WAN":{"name":"Lake Wanaka RTO","value":"1,041,257"},
+    "MAN":{"name":"Manawatu RTO","value":"996,490"},
+    "MBH":{"name":"Marlborough RTO","value":"977,318"},
+    "NST":{"name":"Nelson Tasman RTO","value":"1,078,765"},
+    "NCN":{"name":"North Canterbury","value":"899,727"},
+    "NTL":{"name":"Northland RTO","value":"967,840"},
+    "QUT":{"name":"Queenstown RTO","value":"928,158"},
+    "ROT":{"name":"Rotorua RTO","value":"1,069,766"},
+    "RUA":{"name":"Ruapehu RTO","value":"990,465"},
+    "SCN":{"name":"South Canterbury","value":"973,766"},
+    "STL":{"name":"Southland RTO","value":"1,159,202"},
+    "TKI":{"name":"Taranaki RTO","value":"997,498"},
+    "WKO":{"name":"Waikato RTO","value":"977,813"},
+    "WPA":{"name":"Wairarapa RTO","value":"1,014,993"},
+    "WAI":{"name":"Waitaki RTO","value":"921,579"},
+    "WGU":{"name":"Wanganui RTO","value":"1,024,515"},
+    "WGN":{"name":"Wellington RTO","value":"995,192"},
+    "WTC":{"name":"West Coast RTO","value":"1,023,426"}
+}
+
+
+function m_over(hover_id) { 
+    var objName = objNames[hover_id].name;
+    var objValue = objNames[hover_id].value;
+    document.getElementById("TEXT_NAME").innerHTML = objName;
+    document.getElementById("TEXT_VALUE").innerHTML = objValue;
+    document.getElementById(hover_id).setAttribute("fill-opacity", "0.3");
+}
+
+function m_out(hover_id) { 
+    document.getElementById(hover_id).setAttribute("fill-opacity", "1.0");
+	document.getElementById("TEXT_NAME").innerHTML = "";
+    document.getElementById("TEXT_VALUE").innerHTML = "";
+}
+
+
+]]>
+
+
+</script>
+
+
+</svg>

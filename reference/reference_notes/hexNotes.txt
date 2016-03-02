@@ -1,0 +1,300 @@
+=============================================================================
+
+?ta_simpl_gg
+
+library(mbie)
+library(mbiemaps)
+library(dplyr)
+data(locations)
+
+data(locations_2013)
+
+locations_2013 %>%
+   ggplot(aes(x = Longitude, y = Latitude)) +
+   stat_binhex() +
+   ggtitle("Density of location choices in the latest International Visitor Survey")
+
+
+data(region_simpl_gg)
+centers <- region_simpl_gg %>%
+   select(NAME, long.centre, lat.centre) %>%
+   distinct()
+   
+centers %>%
+   ggplot(aes(x = long.centre, y = lat.centre)) +
+      geom_point(shape = 0, size = 15) +
+      geom_text(aes(label = NAME), colour = "red")
+
+
+=============================================================================
+
+Hi Mark,
+
+Thanks for the informative discussion yesterday on making hexagon tile map using R. 
+
+As promised, I am providing you the shape files of making New Zealand (Region) map in our current system. 
+
+Our team maintains an (unpublished) R package {mbiemaps} which provides map making objects for different New Zealand area boundaries (Regional council, Territorial Authority boundaries, Area Unit etc). The objects are usually stored in three versions: a raw version in SpatialPolygonsDataFrame format (http://www.inside-r.org/packages/cran/sp/docs/as.data.frame.SpatialPolygonsDataFrame) such as Region, TA, AU etc; a simplified version (with gSimplify {rgeos} applied, http://www.inside-r.org/packages/cran/rgeos/docs/gSimplify) such as region_simpl, ta_simpl, au_simpl etc) and a fortified version (which is a data.frame object and suitable used with ggplot, but do not preserve the polygons, converted from SpatialPolygonsDataFrame objects by http://www.inside-r.org/packages/cran/ggplot2/docs/fortify.SpatialPolygonsDataFrame) such as region_simpl_gg, ta_simpl_gg, au_simpl_gg etc.
+
+Note that these map objects are originally extracted from the shapefiles sourced from http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/digital-boundary-files.aspx. But we didn’t save the .shp file in the package.
+
+You could to try this package by 
+> library(mbie)
+> library(mbiemaps)
+> data(Region)
+> plot(Region, col=tourism.cols("Alternating"))
+ 
+using MBIE computers and find some examples from the package documentation. 
+
+We could use either the raw SpatialPolygonsDataFrame (sp in short) or the simplified sp objects,
+> str(Region,3)
+Formal class 'SpatialPolygonsDataFrame' [package "sp"] with 5 slots
+  ..@ data       :'data.frame':       16 obs. of  6 variables:
+  .. ..$ REGC2014  : Factor w/ 17 levels "01","02","03",..: 1 2 3 4 5 6 7 8 9 10 ...
+  .. ..$ NAME      : Factor w/ 17 levels "Area Outside Region",..: 10 2 15 3 5 6 13 7 16 17 ...
+  .. ..$ SHAPE_Leng: num [1:16] 3318396 2876976 2174532 1401290 689550 ...
+  .. ..$ SHAPE_Area: num [1:16] 1.25e+10 4.94e+09 2.46e+10 1.23e+10 8.39e+09 ...
+  .. ..$ long      : num [1:16] 174 175 176 177 178 ...
+  .. ..$ lat       : num [1:16] -35.5 -36.7 -38 -38.2 -38.3 ...
+  ..@ polygons   :List of 16
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  ..@ plotOrder  : int [1:16] 11 12 13 3 10 8 6 1 4 16 ...
+  ..@ bbox       : num [1:2, 1:2] 166.4 -47.3 178.6 -34.4
+  .. ..- attr(*, "dimnames")=List of 2
+  ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+> data(region_simpl)
+> str(region_simpl,3)
+Formal class 'SpatialPolygonsDataFrame' [package "sp"] with 5 slots
+  ..@ data       :'data.frame':       16 obs. of  6 variables:
+  .. ..$ REGC2014  : Factor w/ 17 levels "01","02","03",..: 1 2 3 4 5 6 7 8 9 10 ...
+  .. ..$ NAME      : Factor w/ 17 levels "Area Outside Region",..: 10 2 15 3 5 6 13 7 16 17 ...
+  .. ..$ SHAPE_Leng: num [1:16] 3318396 2876976 2174532 1401290 689550 ...
+  .. ..$ SHAPE_Area: num [1:16] 1.25e+10 4.94e+09 2.46e+10 1.23e+10 8.39e+09 ...
+  .. ..$ long      : num [1:16] 174 175 176 177 178 ...
+  .. ..$ lat       : num [1:16] -35.5 -36.7 -38 -38.2 -38.3 ...
+  ..@ polygons   :List of 16
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  .. ..$ :Formal class 'Polygons' [package "sp"] with 5 slots
+  ..@ plotOrder  : int [1:16] 11 13 12 10 3 8 6 4 1 16 ...
+  ..@ bbox       : num [1:2, 1:2] 166.4 -47.3 178.6 -34.4
+  .. ..- attr(*, "dimnames")=List of 2
+  ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+since the centroids can be extracted from these sp objects.
+> getSpPPolygonsLabptSlots(region_simpl)
+          [,1]      [,2]
+ [1,] 173.8283 -35.50878
+ [2,] 174.6722 -36.74263
+ [3,] 175.5039 -38.03684
+ [4,] 176.8280 -38.16357
+ [5,] 177.9209 -38.28153
+ [6,] 176.7473 -39.38574
+ [7,] 174.4321 -39.33395
+ [8,] 175.5584 -39.74875
+ [9,] 175.4805 -41.08762
+[10,] 170.8721 -42.79493
+[11,] 171.5493 -43.57682
+[12,] 169.5350 -45.26390
+[13,] 167.9472 -45.65434
+[14,] 172.6477 -41.44988
+[15,] 173.3924 -41.24623
+[16,] 173.5176 -41.71486
+
+You might want to play these package a bit to get familiar with it. 
+
+We can discuss further on Friday (if suits you) on the next step. (I will have some tasks to be completed today and be away tomorrow.) 
+
+Cheers
+Eric
+
+
+================================================================================
+ID (ID's Region Duplicated), Value (Value for Region), X (pointA), Y(PointA)
+
+X and Y are repeated six times.
+
+Therefore, if there are 16 regions. There will be 6 pairs of points for each region.
+This means that there will be a data frame with 96 rows (16 * 6).
+
+http://docs.ggplot2.org/current/geom_polygon.html
+======================================================================================
+Calculate Hex Coordinates.  
+Assume we are given two arguments: 1) Hexagon centroid; 2) Hexagon Height (distance between two horizontals).
+
+a) Convert degrees to radians  radians = ( degrees * pi) / 180
+b) Calculate the length of a hexagon side:  hexHypotenuse <- (height / 2) / sin(rad60)
+c) Hexagon total width = 2 * length(side)
+d) Adjacent = hypotenuse * cos(rad60)
+e) innerPointsXOffset =  length(side) - Adjacent
+
+Calculate coordinates for the six points starting at lower left and going clockwise
+Offset 1.y  = centroid(y) - height /2
+Offset 1.x  = centroid(x) - innerPointsXOffset
+
+Offset 2.y = centroid(y) = centroid(y)
+Offset 2.x = centroid(x) - length(side)
+
+Offset 3.x = centroid(y) + height / 2
+Offset 3.x = centroid(x) - innerPointsXOffset
+
+=================================================================================================
+TARGET DATA FRAME STRUCTURE
+
+id, value, x, y
+
+id and value are repeated six times.
+=================================================================================================
+=================================================================================================
+Because I know I’ve been confusing on this, I had a go with Visio to show what it is that I’m expecting.  
+In fact, Visio is a perfect tool for playing around with making it look good.
+
+It’s something like the attached.  
+Then the end product, in this case, would be to work out those coordinates (shouldn’t be hard) and make a table with 16 rows with 4 columns for RegionFullName, x, y, RegionAbbreviation.  
+
+And similarly for TA and RTO.  So the job that has to be done by hand (probably in Visio) is to move the hexagons around so they most closely resemble the actual pattern of regions or areas.
+
+I definitely haven’t got it right in the attached, but it’s shows the sort of thing it is I’m expecting, and why I think it needs to be done by hand.
+
+Cheers
+PE
+
+
+Peter Ellis
+MANAGER SECTOR PERFORMANCE
+
+Institutions and System Performance; Science, Skills and Innovation
+Ministry of Business, Innovation & Employment  | Hikina Whakatutuki
+
+=====================================================================================
+data(RTO)
+plot(RTO, col=tourism.cols("Alternating"))
+nrow(RTO@data) #31
+
+
+data(TA)
+plot(TA, col=tourism.cols("Alternating"))
+
+nrow(TA@data) #66
+
+============================================================================================
+Details about RTO
+SpatialPolygonsDataFrame
+
+Namedata <- RTO@data
+nrow(Namedata) #31
+
+polyNumber <- 1
+data(TA)
+testCol <- rep("#FFFFFF",31)
+testCol[polyNumber] <- "#FF0000"
+plot(TA, col = testCol)
+NameList[polyNumber,]
+
+
+
+
+plotOrder <- RTO@plotOrder
+length(plotOrder) # 31
+
+
+testCol[9] <- "#FF0000"  #Results in Gisborne being plotted.  
+# This is the same order as per the NameData data frame
+
+#This list will display numbers and tourism names
+NameList <- data.frame(id = 1:31,name = Namedata[, "RTO"])
+
+=====================Coordinates of NE, SE and NW, SW polygons=============================
+
+Compared to the central polygon, these are offset on the x axis by +/-(sidelength * 1.5)
+The Y axis will be offset +/- (height / 2)
+
+North
+
+1,2,6,9,10,11,12,13,15,19,21,22,25,26,27,29,30
+
+South
+ 3  4  5  7  8 14 16 17 18 20 23 24 28 31
+
+
+
+
+notifications@github.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

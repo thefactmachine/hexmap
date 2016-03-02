@@ -1,0 +1,13 @@
+function m_over(hover_id) { 
+    var objName = objNames[hover_id].name;
+    var objValue = objNames[hover_id].value;
+    document.getElementById("TEXT_NAME").innerHTML = objName;
+    document.getElementById("TEXT_VALUE").innerHTML = objValue;
+    document.getElementById(hover_id).setAttribute("fill-opacity", "0.3");
+}
+
+function m_out(hover_id) { 
+    document.getElementById(hover_id).setAttribute("fill-opacity", "1.0");
+	document.getElementById("TEXT_NAME").innerHTML = "";
+    document.getElementById("TEXT_VALUE").innerHTML = "";
+}
